@@ -20,7 +20,7 @@
   }
 
   ::selection {
-    @apply bg-aqua/30 text-navy-950;
+    @apply bg-orange/30 text-navy-950;
   }
 
   ::-webkit-scrollbar {
@@ -47,7 +47,7 @@
   }
 
   :focus-visible {
-    @apply outline-none ring-2 ring-aqua ring-offset-2 ring-offset-white;
+    @apply outline-none ring-2 ring-orange ring-offset-2 ring-offset-white;
   }
 
   [id] {
@@ -81,7 +81,7 @@
   }
 
   .btn-primary {
-    @apply btn bg-gradient-to-r from-royal to-aqua text-white shadow-royal hover:-translate-y-0.5 hover:from-royal-light hover:to-aqua-light hover:shadow-glow;
+    @apply btn bg-gradient-to-r from-royal to-orange text-white shadow-royal hover:-translate-y-0.5 hover:from-royal-light hover:to-orange-light hover:shadow-glow;
   }
 
   .btn-secondary {
@@ -93,7 +93,7 @@
   }
 
   .btn-outline-light {
-    @apply btn border border-white/20 bg-white/10 text-white backdrop-blur-md hover:-translate-y-0.5 hover:border-aqua hover:bg-white/15;
+    @apply btn border border-white/20 bg-white/10 text-white backdrop-blur-md hover:-translate-y-0.5 hover:border-orange hover:bg-white/15;
   }
 
   .card {
@@ -109,7 +109,7 @@
   }
 
   .field-input {
-    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-base text-navy placeholder:text-slate-400 transition-colors focus:border-aqua focus:bg-white focus:outline-none focus:ring-2 focus:ring-aqua/20 sm:text-sm;
+    @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-base text-navy placeholder:text-slate-400 transition-colors focus:border-orange focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange/20 sm:text-sm;
   }
 
   .field-error {

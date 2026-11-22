@@ -36,7 +36,7 @@ export default function FeaturedSystems() {
                     alt={product.alt}
                     className="aspect-[16/10] w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
-                  <span className="absolute left-4 top-4 rounded-lg border border-white/20 bg-navy-900/80 px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-widest text-aqua backdrop-blur-md">
+                  <span className="absolute left-4 top-4 rounded-lg border border-white/20 bg-navy-900/80 px-3 py-1.5 text-[0.68rem] font-bold uppercase tracking-widest text-orange backdrop-blur-md">
                     {product.tag}
                   </span>
                 </div>
@@ -45,7 +45,7 @@ export default function FeaturedSystems() {
                   <h3 className="mt-3 text-lg font-bold text-navy">{product.title}</h3>
                   <p className="mt-3 flex-1 text-sm leading-7 text-muted">{product.description}</p>
                   <p className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-navy">
-                    <Check className="h-4 w-4 text-aqua" aria-hidden="true" />
+                    <Check className="h-4 w-4 text-orange" aria-hidden="true" />
                     {product.suitable}
                   </p>
                   <a

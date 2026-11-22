@@ -28,7 +28,7 @@ export default function About() {
       <div className="container-custom grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <span className="eyebrow">
-            <span className="h-px w-6 bg-royal" aria-hidden="true" />
+            <span className="h-px w-6 bg-orange" aria-hidden="true" />
             About Solar Days
           </span>
           <h2 className="section-title mt-4">Building a Brighter, Sustainable Future</h2>

@@ -39,7 +39,7 @@ export default function WhySolarDays() {
 
       <div className="container-custom relative grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
         <Reveal>
-          <span className="eyebrow text-aqua">
+          <span className="eyebrow text-orange">
             <span className="h-px w-6 bg-sun" aria-hidden="true" />
             Why Solar Days
           </span>
@@ -77,7 +77,7 @@ export default function WhySolarDays() {
                 >
                   <span
                     className={`flex h-11 w-11 items-center justify-center rounded-xl ${
-                      value.featured ? 'bg-royal text-navy-950' : 'bg-white/10 text-aqua'
+                      value.featured ? 'bg-royal text-navy-950' : 'bg-white/10 text-orange'
                     }`}
                   >
                     <Icon className="h-5 w-5" aria-hidden="true" />

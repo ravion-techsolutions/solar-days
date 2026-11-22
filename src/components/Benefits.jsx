@@ -48,7 +48,7 @@ export default function Benefits() {
               className="pointer-events-none absolute -right-6 -top-6 h-40 w-40 rounded-full bg-sun/10 blur-2xl"
               aria-hidden="true"
             />
-            <span className="eyebrow text-aqua">
+            <span className="eyebrow text-orange">
               <span className="h-px w-6 bg-sun" aria-hidden="true" />
               Why solar energy
             </span>
@@ -60,7 +60,7 @@ export default function Benefits() {
             </p>
             <div className="mt-auto pt-10">
               <div className="flex items-start gap-4 border-t border-white/15 pt-6">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-aqua/15 text-aqua">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange/15 text-orange">
                   <Sun className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <div>

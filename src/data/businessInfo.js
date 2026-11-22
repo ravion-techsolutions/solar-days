@@ -21,7 +21,6 @@ export const businessInfo = {
     { name: 'Sreeja V.', phone: '9388704617', displayPhone: '9388704617' },
   ],
   email: 'solardays365@gmail.com',
-  gst: '32AEFFS9820R1ZD',
   whatsappNumber: '919287344005',
   defaultWhatsappMessage: 'Hello Solar Days, I would like to know more about your solar energy solutions.',
   siteUrl,

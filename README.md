@@ -4,15 +4,15 @@ A complete static React website for **Solar Days**, a solar energy solutions bus
 
 ## Highlights
 
-- Reference-inspired dark navy, royal blue and aqua visual system with a utility bar and sticky header
+- Logo-driven white, blue and orange visual system with a utility bar and sticky header
 - Mobile-first responsive design with touch-friendly controls, tabbed hero and route-aware navigation
 - Separate page routes for Home, About Us, Services, Products and Contact
-- Hero, About, Solar Solutions, Benefits, How Solar Works, Why Solar Days, Gallery, FAQ, Contact and Map sections
+- Hero, About, Solar Solutions, Benefits, How Solar Works, Why Solar Days, Gallery, Contact and Map sections
 - WhatsApp click-to-chat links, floating button and enquiry form integration
 - Google Maps embed and directions links generated from the business address
 - SEO metadata, Open Graph, Twitter metadata and LocalBusiness JSON-LD
 - Lazy-loaded responsive WebP imagery and locally stored assets
-- Accessible accordion, gallery lightbox, keyboard navigation and reduced-motion support
+- Gallery lightbox, keyboard navigation and reduced-motion support
 
 ## Tech Stack
 
@@ -51,7 +51,7 @@ All business information is centralized in `src/data/businessInfo.js`:
 - Business name, description and logo
 - Full address and location fields
 - Contact people and phone numbers
-- Email and GST number
+- Email address
 - WhatsApp destination and default message
 - Google Maps embed, directions and open links
 - Site URL from `VITE_SITE_URL`
@@ -86,7 +86,7 @@ src/
 │   ├── images/          Optimized WebP images and OG image
 │   └── logo/            Original-derived Solar Days logo and favicon
 ├── components/          Utility-bar navbar, tabbed Hero, page shell, sections, shared UI
-├── data/                Business info, solutions, products, FAQ and gallery data
+├── data/                Business info, solutions, products and gallery data
 ├── pages/               Home, AboutUs, Services, Products and Contact routes
 ├── utils/               WhatsApp URL and enquiry message helpers
 ├── App.jsx              App shell, router, HelmetProvider, skip link

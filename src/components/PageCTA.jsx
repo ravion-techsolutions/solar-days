@@ -10,12 +10,12 @@ export default function PageCTA({
     <section className="section bg-mist">
       <div className="container-custom">
         <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-navy p-7 shadow-elevated sm:p-10">
-          <div className="pointer-events-none absolute -left-20 -top-20 h-80 w-80 rounded-full bg-aqua/10 blur-3xl" aria-hidden="true" />
+          <div className="pointer-events-none absolute -left-20 -top-20 h-80 w-80 rounded-full bg-orange/10 blur-3xl" aria-hidden="true" />
           <div className="pointer-events-none absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-royal/25 blur-3xl" aria-hidden="true" />
           <div className="relative flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
             <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-aqua">
-                <span className="h-px w-6 bg-aqua" aria-hidden="true" />
+              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-orange">
+                <span className="h-px w-6 bg-orange" aria-hidden="true" />
                 Next step
               </span>
               <h2 className="mt-5 text-balance text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl">

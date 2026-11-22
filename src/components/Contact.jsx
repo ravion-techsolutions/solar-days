@@ -80,7 +80,7 @@ export default function Contact() {
             <div className="h-full rounded-[1.6rem] bg-navy-900 p-7 text-white sm:p-9">
               <h3 className="text-xl font-semibold tracking-[-0.02em]">{businessInfo.name}</h3>
               <p className="mt-5 flex gap-3 text-sm leading-7 text-white/70">
-                <MapPin className="mt-1 h-4 w-4 shrink-0 text-aqua" aria-hidden="true" />
+                <MapPin className="mt-1 h-4 w-4 shrink-0 text-orange" aria-hidden="true" />
                 <span>{businessInfo.address}</span>
               </p>
 
@@ -90,9 +90,9 @@ export default function Contact() {
                     <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/45">{person.name}</p>
                     <a
                       href={`tel:+91${person.phone}`}
-                      className="mt-1.5 inline-flex items-center gap-2 text-base font-semibold text-white transition-colors hover:text-aqua"
+                      className="mt-1.5 inline-flex items-center gap-2 text-base font-semibold text-white transition-colors hover:text-orange"
                     >
-                      <Phone className="h-4 w-4 text-aqua" aria-hidden="true" />
+                      <Phone className="h-4 w-4 text-orange" aria-hidden="true" />
                       {person.displayPhone}
                     </a>
                   </div>
@@ -103,9 +103,9 @@ export default function Contact() {
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/45">Email</p>
                 <a
                   href={`mailto:${businessInfo.email}`}
-                  className="mt-1.5 inline-flex items-center gap-2 break-all text-sm font-semibold text-white transition-colors hover:text-aqua"
+                  className="mt-1.5 inline-flex items-center gap-2 break-all text-sm font-semibold text-white transition-colors hover:text-orange"
                 >
-                  <Mail className="h-4 w-4 shrink-0 text-aqua" aria-hidden="true" />
+                  <Mail className="h-4 w-4 shrink-0 text-orange" aria-hidden="true" />
                   {businessInfo.email}
                 </a>
               </div>

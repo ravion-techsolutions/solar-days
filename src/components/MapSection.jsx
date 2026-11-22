@@ -9,7 +9,7 @@ export default function MapSection() {
         <Reveal>
           <div className="flex h-full flex-col justify-center rounded-[1.6rem] border border-line bg-white p-7 shadow-soft sm:p-9">
             <span className="eyebrow">
-              <span className="h-px w-6 bg-royal" aria-hidden="true" />
+              <span className="h-px w-6 bg-orange" aria-hidden="true" />
               Our location
             </span>
             <h2 className="section-title mt-4">Find Solar Days in Azhikode</h2>

@@ -69,7 +69,7 @@ export default function SEO() {
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
       <meta name="robots" content="index, follow" />
-      <meta name="theme-color" content="#142B45" />
+      <meta name="theme-color" content="#EAF2FF" />
       {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={businessInfo.name} />

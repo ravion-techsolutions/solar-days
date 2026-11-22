@@ -13,8 +13,8 @@ const items = [
   },
   {
     icon: ShieldCheck,
-    title: 'GST registered',
-    copy: 'Registered with GSTIN 32AEFFS9820R1ZD.',
+    title: 'Clear guidance',
+    copy: 'Straight answers for your solar questions.',
   },
   {
     icon: MessageCircle,
@@ -31,7 +31,7 @@ export default function TrustStrip() {
           const Icon = item.icon;
           return (
             <div key={item.title} className="flex items-start gap-4">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-aqua/10 text-aqua">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-orange/10 text-orange">
                 <Icon className="h-5 w-5" aria-hidden="true" />
               </span>
               <div>

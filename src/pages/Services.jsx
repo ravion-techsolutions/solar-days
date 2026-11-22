@@ -1,6 +1,5 @@
 import { ArrowUpRight, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import FAQ from '../components/FAQ';
 import HowSolarWorks from '../components/HowSolarWorks';
 import PageCTA from '../components/PageCTA';
 import PageHero from '../components/PageHero';
@@ -33,7 +32,6 @@ export default function Services() {
       <TrustStrip />
       <SolarSolutions />
       <HowSolarWorks />
-      <FAQ />
       <PageCTA
         title="Not sure which solar option fits?"
         copy="Tell us whether this is for a home, shop or larger property. We will help you frame the right questions before you decide."

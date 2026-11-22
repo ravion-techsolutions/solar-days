@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowUpRight, Check, MapPin, MessageCircle, ShieldCheck, Sun } from 'lucide-react';
+import { ArrowUpRight, Check, MapPin, MessageCircle, Sun } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroLarge from '../assets/images/hero-1920.webp';
 import commercialLarge from '../assets/images/commercial-1600.webp';
@@ -53,10 +53,10 @@ export default function Hero() {
   );
 
   return (
-    <section className="relative overflow-hidden bg-navy-900 pt-[4.5rem] text-white md:pt-[6.75rem]">
-      <div className="pointer-events-none absolute inset-0 bg-grid-dots bg-dots opacity-10" aria-hidden="true" />
-      <div className="pointer-events-none absolute -right-40 -top-20 h-[32rem] w-[32rem] rounded-full bg-royal/25 blur-3xl" aria-hidden="true" />
-      <div className="pointer-events-none absolute -bottom-48 -left-24 h-[30rem] w-[30rem] rounded-full bg-aqua/10 blur-3xl" aria-hidden="true" />
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#EAF2FF] via-[#DCE9FF] to-[#C7D9FF] pt-[4.5rem] text-navy md:pt-[6.75rem]">
+      <div className="pointer-events-none absolute inset-0 bg-solar-panel bg-panel opacity-70" aria-hidden="true" />
+      <div className="pointer-events-none absolute -right-32 -top-24 h-[30rem] w-[30rem] rounded-full bg-white/70 blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute -bottom-40 -left-24 h-[28rem] w-[28rem] rounded-full bg-orange/10 blur-3xl" aria-hidden="true" />
 
       <div className="container-custom relative grid items-center gap-12 py-14 sm:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16 lg:py-24">
         <motion.div
@@ -66,8 +66,8 @@ export default function Hero() {
           className="max-w-2xl"
         >
           <motion.div variants={itemVariants}>
-            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-aqua">
-              <span className="h-1.5 w-1.5 rounded-full bg-aqua" aria-hidden="true" />
+            <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-orange">
+              <span className="h-1.5 w-1.5 rounded-full bg-orange" aria-hidden="true" />
               Solar energy solutions in Kannur
             </span>
           </motion.div>
@@ -76,18 +76,18 @@ export default function Hero() {
             variants={itemVariants}
             className="mt-6 text-balance text-4xl font-black leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl"
           >
-            Pure Energy. <span className="text-solar-400">Brighter Futures.</span>
+            Pure Energy. <span className="text-orange">Brighter Futures.</span>
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="mt-6 max-w-xl text-base leading-8 text-slate-300 sm:text-lg">
+          <motion.p variants={itemVariants} className="mt-6 max-w-xl text-base leading-8 text-muted sm:text-lg">
             Discover thoughtful solar energy solutions for homes and businesses in Azhikode, Kannur. Clear guidance,
             practical options and a simple way to get started.
           </motion.p>
 
-          <motion.ul variants={itemVariants} className="mt-7 grid gap-3 sm:grid-cols-1">
+          <motion.ul variants={itemVariants} className="mt-7 grid gap-3">
             {highlights.map((highlight) => (
-              <li key={highlight} className="flex items-start gap-3 text-sm leading-7 text-slate-200">
-                <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-aqua/15 text-aqua">
+              <li key={highlight} className="flex items-start gap-3 text-sm leading-7 text-navy">
+                <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
                   <Check className="h-3 w-3" aria-hidden="true" />
                 </span>
                 {highlight}
@@ -100,23 +100,19 @@ export default function Hero() {
               Explore Solar Solutions
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
             </Link>
-            <a href={consultationUrl} target="_blank" rel="noopener noreferrer" className="btn-outline-light w-full sm:w-auto">
-              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            <a href={consultationUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary w-full sm:w-auto">
+              <MessageCircle className="h-4 w-4 text-orange" aria-hidden="true" />
               Get a Free Quote
             </a>
           </motion.div>
 
-          <motion.div variants={itemVariants} className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-semibold text-slate-400">
+          <motion.div variants={itemVariants} className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-semibold text-muted">
             <span className="inline-flex items-center gap-1.5">
-              <ShieldCheck className="h-4 w-4 text-aqua" aria-hidden="true" />
-              GST Registered
-            </span>
-            <span className="inline-flex items-center gap-1.5">
-              <MapPin className="h-4 w-4 text-aqua" aria-hidden="true" />
+              <MapPin className="h-4 w-4 text-orange" aria-hidden="true" />
               Azhikode, Kannur
             </span>
             <span className="inline-flex items-center gap-1.5">
-              <Sun className="h-4 w-4 text-aqua" aria-hidden="true" />
+              <Sun className="h-4 w-4 text-orange" aria-hidden="true" />
               Solar-focused
             </span>
           </motion.div>
@@ -128,8 +124,8 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="relative"
         >
-          <div className="glass-panel bg-gradient-to-b from-navy-700/60 to-navy-950/90 p-3 sm:p-5">
-            <div className="relative overflow-hidden rounded-2xl">
+          <div className="rounded-3xl border-4 border-white bg-white/70 p-3 shadow-elevated sm:p-5">
+            <div className="relative overflow-hidden rounded-2xl border border-white/80">
               <img
                 key={slide.image}
                 src={slide.image}
@@ -138,13 +134,14 @@ export default function Hero() {
                 alt={slide.alt}
                 className="aspect-[4/3] w-full object-cover sm:aspect-[16/11]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" aria-hidden="true" />
+              <div className="pointer-events-none absolute inset-0 bg-solar-panel bg-panel opacity-90" aria-hidden="true" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-900/25 via-transparent to-transparent" aria-hidden="true" />
               <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3 sm:bottom-6 sm:left-6 sm:right-6">
-                <div>
-                  <p className="text-[0.68rem] font-bold uppercase tracking-widest text-aqua">{slide.label}</p>
-                  <p className="mt-1 text-base font-bold text-white sm:text-lg">{slide.title}</p>
+                <div className="rounded-xl border border-white/40 bg-white/85 px-4 py-3 backdrop-blur-md">
+                  <p className="text-[0.68rem] font-bold uppercase tracking-widest text-orange">{slide.label}</p>
+                  <p className="mt-1 text-base font-bold text-navy sm:text-lg">{slide.title}</p>
                 </div>
-                <span className="hidden rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-[0.68rem] font-semibold text-white backdrop-blur-md sm:inline-flex">
+                <span className="hidden rounded-full border border-white/60 bg-white/85 px-3 py-1.5 text-[0.68rem] font-semibold text-navy backdrop-blur-md sm:inline-flex">
                   Illustrative imagery
                 </span>
               </div>
@@ -162,11 +159,11 @@ export default function Hero() {
                   aria-pressed={isActive}
                   className={`rounded-xl border px-3 py-3 text-left transition-all ${
                     isActive
-                      ? 'border-aqua/60 bg-aqua/10 text-white'
-                      : 'border-white/10 bg-white/5 text-slate-400 hover:border-white/20 hover:text-white'
+                      ? 'border-royal bg-white text-navy shadow-soft'
+                      : 'border-white/80 bg-white/50 text-muted hover:border-royal hover:text-navy'
                   }`}
                 >
-                  <span className="block text-[0.65rem] font-bold tracking-widest text-aqua">0{index + 1}</span>
+                  <span className="block text-[0.65rem] font-bold tracking-widest text-orange">0{index + 1}</span>
                   <span className="mt-1 block text-xs font-semibold sm:text-sm">{item.label}</span>
                 </button>
               );
